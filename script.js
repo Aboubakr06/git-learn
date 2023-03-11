@@ -364,31 +364,22 @@ const printStringStats = (stringToTest) => {
 //-----CODE NON DRY------
 
 //variable de différentes personnes
-let students = ["Jean", "Paul", "Marcel"];
-
-//On met la première lettre en majuscule, on salue la première personne et on donne le nombre de lettre dans son prénom
+let students = ["Jean", "Paul", "Marcel", "Abbass"];
 
 const countNumberOfLetters = (student) => {
-        
-    student = student[0].toUpperCase() + student.substr(1);
-    
-    const nameLength = student.length;
-    
-    console.log(`Bonjour ${student}, ton prénom contient ${nameLength} lettres`);
-      
+//On met la première lettre en majuscule, on salue la première personne et on donne le nombre de lettre dans son prénom        
+    student = student[0].toUpperCase() + student.substr(1);    
+    const nameLength = student.length;    
+    console.log(`Bonjour ${student}, ton prénom contient ${nameLength} lettres`);     
 }
 
-const insertStudents = (studentsArray) => {
-  
-  for (let i = 0 ; i < studentsArray.length ; i++) {
-    
-    countNumberOfLetters(studentsArray[i])
-    
-  }
-  
+const insertStudents = (studentsArray) => {  
+  for (let i = 0 ; i < studentsArray.length ; i++) {    
+    countNumberOfLetters(studentsArray[i]);    
+  }  
 }
 
-insertStudents(students)
+insertStudents(students);
 
 //-----CODE MAL NOMMÉ------
 
@@ -411,39 +402,28 @@ console.log('Il y a ' + numberOfSudents + " élèves dans la classe et la moyenn
 
 const temperature = 9;
 
-if(temperature < 0) { 
-  
-  console.log("Il fait très froid");
-  
+if(temperature < 0) {  
+  console.log("Il fait très froid");  
 }
 
-else if(temperature < 10) {
-  
-console.log("Il fait froid");
-  
+else if(temperature < 10) {  
+console.log("Il fait froid");  
 }
 
-else if(temperature < 10) {
-  
-  console.log("Il fait frais");
-  
+else if(temperature < 10) {  
+  console.log("Il fait frais");  
 }
 
-else if(temperature < 20) {
-  
-console.log("Il fait doux");
-  
+else if(temperature < 20) {  
+console.log("Il fait doux");  
 } 
 
-else if(temperature < 30) {
-  
+else if(temperature < 30) {  
   console.log("Il fait bon");
-
 } 
 
 else {  
-  
-  console.log("Il fait chaud");
-  
+  console.log("Il fait chaud");  
 }
+
 */
