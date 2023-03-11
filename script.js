@@ -358,3 +358,92 @@ const printStringStats = (stringToTest) => {
 }
 
 */
+
+/*
+
+//-----CODE NON DRY------
+
+//variable de différentes personnes
+let students = ["Jean", "Paul", "Marcel"];
+
+//On met la première lettre en majuscule, on salue la première personne et on donne le nombre de lettre dans son prénom
+
+const countNumberOfLetters = (student) => {
+        
+    student = student[0].toUpperCase() + student.substr(1);
+    
+    const nameLength = student.length;
+    
+    console.log(`Bonjour ${student}, ton prénom contient ${nameLength} lettres`);
+      
+}
+
+const insertStudents = (studentsArray) => {
+  
+  for (let i = 0 ; i < studentsArray.length ; i++) {
+    
+    countNumberOfLetters(studentsArray[i])
+    
+  }
+  
+}
+
+insertStudents(students)
+
+//-----CODE MAL NOMMÉ------
+
+//tableau des ages des élèves dans la classe
+const studentsAge = [14, 14, 15, 14, 16, 14, 14, 13];
+// Nombre d'élèves
+const numberOfSudents = studentsAge.length;
+// variable pour calculer la somme des ages
+let agesSomme = 0;
+for(let studentAge of studentsAge){
+  agesSomme += studentAge;
+}
+//moyenne d'age dans la classe
+const averageAge = agesSomme / numberOfSudents;
+console.log('Il y a ' + numberOfSudents + " élèves dans la classe et la moyenne d'age est " + averageAge);
+    
+
+
+//-----CODE MAL MIS EN FORME------
+
+const temperature = 9;
+
+if(temperature < 0) { 
+  
+  console.log("Il fait très froid");
+  
+}
+
+else if(temperature < 10) {
+  
+console.log("Il fait froid");
+  
+}
+
+else if(temperature < 10) {
+  
+  console.log("Il fait frais");
+  
+}
+
+else if(temperature < 20) {
+  
+console.log("Il fait doux");
+  
+} 
+
+else if(temperature < 30) {
+  
+  console.log("Il fait bon");
+
+} 
+
+else {  
+  
+  console.log("Il fait chaud");
+  
+}
+*/
